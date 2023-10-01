@@ -11,11 +11,11 @@ let buttonName = [
   },
   {
     name: "In Review",
-    url: "/articles",
+    url: "",
   },
   {
     name: "Drafts",
-    url: "/Title",
+    url: "",
   },
 ];
 

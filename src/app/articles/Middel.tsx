@@ -30,23 +30,23 @@ function Middel() {
           <img className="w-full" src="./image 13.png" alt="" />
         </div>
         <div className="lg:max-w-[584px] lg:mb-4 mb-7">
-          <h1 className="lg:text-3xl text-xl text-gray-700 mb-5">
+          <h1 className="lg:text-3xl text-lg text-gray-700 lg:mb-5 mb-2">
             Here are some of the keys that make flutter was born way different
             than other frameworks.
           </h1>
-          <h2 className="lg:text-3xl text-xl text-gray-700 mb-5">
+          <h2 className="lg:text-3xl text-lg text-gray-700 lg:mb-5 mb-2">
             {" "}
             <p>Greate UI</p> I meant really great UI, It is by definition
             built-in for beautiful UI. Flutter has very good resources on great
             UI and animation.
           </h2>
-          <h3 className="lg:text-3xl text-xl text-gray-700 mb-5">
+          <h3 className="lg:text-3xl text-lg text-gray-700 lg:mb-5 mb-2">
             {" "}
             <p>Native Performance</p> Flutter doesn't use any webview or web
             technology such as HTML to render view/UI. It uses dart language and
             canvas bridge to build beautiful animated UI.
           </h3>
-          <h4 className="lg:text-3xl text-xl text-gray-700">
+          <h4 className="lg:text-3xl text-lg text-gray-700">
             {" "}
             <p>Canvas Advantage</p> Flutter uses Canvas to draw UI in your
             application and since all platforms such as Mobiles, Desktop, and

@@ -57,7 +57,6 @@ function Navbar() {
   let Toggle = () => setOpen((prev) => !prev);
 
   const pathname = usePathname();
-
   return (
     <div className="h-full">
       <div className="sticky top-0">
