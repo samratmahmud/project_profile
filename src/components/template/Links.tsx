@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-interface allLinks {
+export interface allLinks {
   name: string;
   href?: string;
 }

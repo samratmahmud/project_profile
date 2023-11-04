@@ -1,4 +1,7 @@
-import React, {ReactNode} from "react";
+"use client";
+import React, {ReactNode, useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface LayoutProps {
   navbar: ReactNode;
@@ -7,6 +10,11 @@ interface LayoutProps {
 }
 
 function Layout(props: LayoutProps) {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+    });
+  });
   return (
     <div className="container">
       <div className="lg:flex">

@@ -4,9 +4,6 @@ import IconButton from "@/components/common/IconButton";
 import Post from "@/components/common/Post";
 import Describe from "@/components/template/Describe";
 import Links from "@/components/template/Links";
-import Profile from "@/components/template/Profile";
-import Styk from "@/components/template/Styk";
-import Link from "next/link";
 import React, {useState} from "react";
 import ScrollContainer from "react-indiana-drag-scroll";
 
@@ -42,7 +39,7 @@ function Header() {
           </div>
           <div className="flex-1 w-full">
             <ScrollContainer className="">
-              <div className="flex lg:gap-4 gap-2 w-0">
+              <div data-aos="fade-left" className="flex lg:gap-4 gap-2 w-0">
                 <Links href="/" name="Gaming" />
                 <Links href="/" name="Android Development" />
                 <Links href="/" name="Freelancing" />
@@ -51,7 +48,7 @@ function Header() {
           </div>
         </div>
         <ScrollContainer vertical={true} className="scroll-container">
-          <div className="flex gap-6 mb-8">
+          <div className="flex gap-6 mb-8" data-aos="zoom-in">
             {profile.map((item) => (
               <img src={item} alt="" className="flex-shrink-0 w-16 h-16" />
             ))}

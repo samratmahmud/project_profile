@@ -1,9 +1,35 @@
 "use client";
-import Links from "@/components/template/Links";
+import Links, {allLinks} from "@/components/template/Links";
 import Person_detail from "@/components/template/Person_detail";
 import Placehold from "@/components/template/Placehold";
-import Styk from "@/components/template/Styk";
 import React from "react";
+
+const buttonProps: allLinks[] = [
+  {
+    name: "Flutter App Dev",
+    href: "/",
+  },
+  {
+    name: "Cosmic",
+    href: "/",
+  },
+  {
+    name: "Politics",
+    href: "/",
+  },
+  {
+    name: "Religion",
+    href: "/",
+  },
+  {
+    name: "IOS App Dev",
+    href: "/",
+  },
+  {
+    name: "Finance",
+    href: "/",
+  },
+];
 
 function Aside() {
   return (
@@ -54,12 +80,9 @@ function Aside() {
             </div>
           </div>
           <div className="flex flex-wrap gap-x-3 gap-y-5">
-            <Links href="/" name="Cosmic" />
-            <Links href="/" name="Flutter App Dev" />
-            <Links href="/" name="IOS App Dev" />
-            <Links href="/" name="Politics" />
-            <Links href="/" name="Religion" />
-            <Links href="/" name="Finance" />
+            {buttonProps.map((item, index) => (
+              <Links key={index} {...item} />
+            ))}
           </div>
         </div>
       </div>
